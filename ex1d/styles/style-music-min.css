@@ -1,0 +1,114 @@
+.music-island-box {
+    background-color: #121212;
+    border: 1px solid #1a1a1a;
+    border-radius: 12px;
+    padding: 14px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.music-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.music-title { color: #777777; }
+.music-source { color: #b81d24; font-weight: bold; } 
+
+.track-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.track-cover {
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.cover-stub {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a0809 0%, #b81d24 100%);
+    box-shadow: 0 0 8px rgba(184, 29, 36, 0.4);
+}
+
+.track-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.track-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.track-artist {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.player-progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #262626;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.progress-fill {
+    width: 35%; 
+    height: 100%;
+    background-color: #b81d24; 
+    border-radius: 2px;
+    box-shadow: 0 0 8px #b81d24,
+                0 0 16px rgba(184, 29, 36, 0.6);
+                
+    transition: width 0.3s ease; 
+}
+
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.player-btn {
+    background: none;
+    border: none;
+    color: #aaaaaa;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.player-btn:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.play-btn {
+    font-size: 18px;
+    color: #b81d24;
+    transition: transform 0.1s;
+}
+
+.play-btn:hover {
+    color: #b81d24;
+    /* Яркое багровое неоновое свечение самого значка ▶ */
+    text-shadow: 0 0 10px rgba(184, 29, 36, 0.8),
+                 0 0 20px rgba(184, 29, 36, 0.5);
+    transform: scale(1.1); 
+}

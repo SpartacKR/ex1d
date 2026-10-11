@@ -1,0 +1,214 @@
+.wing-center .profile-triptych-meta {
+    border-radius: 0 0 15px 15px;
+}
+
+.main_bord_main_plast_profiles {
+    position: relative; 
+    background: #0b0b0b;
+    border: 1px solid #1a1a1a;  
+    border-radius: 12px;       
+    height: auto !important;
+    min-height: 800px; 
+    padding: 0 0 40px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-global-bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35; 
+    z-index: 0;
+    pointer-events: none;
+}
+
+.profile-center-column {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    width: 100%;
+}
+
+.triptych-banner-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px; 
+    padding: 15px;
+    box-sizing: border-box;
+    align-items: start;
+    height: auto !important;
+}
+
+.profile-module-card {
+    position: relative;
+    z-index: 5;
+    background: rgba(17, 17, 17, 0.85); 
+    border: 1px solid #1a1a1a;
+    border-radius: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%; 
+    transition: border-color 0.3s ease;
+}
+
+.profile-module-card:hover {
+    border-color: #ff003c;
+}
+
+.wing-center .profile-triptych-meta {
+    border-radius: 0 0 15px 15px !important;
+}
+
+.profile-module-card h3 {
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.profile-top-zone {
+    position: relative;
+    width: 100%;
+}
+
+.triptych-banner-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px; 
+    padding: 15px;
+    box-sizing: border-box;
+    align-items: start;
+    height: 680px; 
+}
+
+.banner-wing {
+    position: relative;
+    border: 1px solid #1a1a1a;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    transition: border-color 0.3s ease;
+}
+
+.banner-wing:hover {
+    border-color: #ff003c;
+}
+
+.wing-left, .wing-right {
+    height: 650px;
+}
+
+.wing-center {
+    height: 320px;
+}
+
+.triptych-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 2;
+    border-radius: 15px;
+    overflow: hidden;  
+}
+
+.triptych-blur {
+    position: absolute;
+    top: 5px; 
+    left: 2%;
+    width: 96%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    filter: blur(40px) saturate(2.2) opacity(0.7);
+    transform: scale(1.08);
+    pointer-events: none;
+}
+
+.wing-center .profile-triptych-meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(11, 11, 11, 0) 0%, rgba(11, 11, 11, 0.85) 100%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-triptych-avatar {
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+}
+
+.profile-triptych-avatar .avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-triptych-info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.profile-main-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.user-display-name {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.user-status-text {
+    color: #888888;
+    font-size: 14px;
+    margin: 0;
+}
+
+.profile-mini-badges {
+    display: flex;
+    gap: 8px;
+}
+
+.badge-pill {
+    background: #111111;
+    border: 1px solid #222222;
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.badge-pill small {
+    color: #555555;
+    margin-right: 4px;
+}
